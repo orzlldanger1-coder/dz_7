@@ -1,0 +1,290 @@
+:root {
+  --color-primary: #4f6df5;
+  --color-primary-dark: #3e4f9c;
+  --color-primary-light: #eef1ff;
+  --color-primary-light-hover: #e0e6ff;
+  --color-primary-light-active: #d1d9ff;
+  --color-secondary: #3349bd;
+  --color-secondary-light: #dcd8d8;
+  --color-secondary-dark: #b9b9b9;
+  --color-text: #172033;
+  --color-text-muted: #59647a;
+  --color-text-light: #687287;
+  --color-background: #ffffff;
+  --color-background-muted: #f5f7ff;
+  --color-background-alt: #f8f9fc;
+  --color-border: #e5e9f2;
+  --color-border-alt: #dde2ef;
+  --color-background-color: #4f6df5;
+}
+
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  min-width: 1240px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--color-text);
+  background-color: var(--color-background);
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+img {
+  display: block;
+}
+.container {
+  width: 1180px;
+  margin: 0 auto;
+}
+.header {
+  border-bottom: 1px solid var(--color-border);
+  background-color: var(--color-background);
+}
+.header__inner {
+  height: 84px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 36px;
+}
+.logo {
+  font-size: 28px;
+  font-weight: 800;
+  color: var(--color-text);
+}
+.logo span {
+  color: var(--color-primary);
+}
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 34px;
+  font-size: 16px;
+}
+.button {
+  display: inline-block;
+  padding: 16px 26px;
+  border-radius: 10px;
+  background-color: var(--color-primary);
+  color: #ffffff;
+  font-weight: 700;
+  text-align: center;
+}
+.button:hover {
+  background-color: var(--color-primary-dark);
+  transition: background-color 0.3s;
+}
+.button:active {
+  background-color: var(--color-primary-dark);
+}
+.button--small {
+  padding: 12px 20px;
+}
+.button--small:hover {
+  background-color: var(--color-primary-dark);
+}
+.button--small:active {
+  background-color: var(--color-primary-dark);
+}
+
+.button--light {
+  background-color: var(--color-primary-light);
+  color: var(--color-primary);
+}
+.button--light:hover {
+  background-color: var(--color-primary-light-hover);
+}
+.button--light:active {
+  background-color: var(--color-primary-light-active);
+}
+.button--white {
+  background-color: var(--color-background);
+  color: var(--color-secondary);
+}
+.button--white:hover {
+  background-color: var(--color-secondary-light);
+}
+.button--white:active {
+  background-color: var(--color-secondary-dark);
+}
+.hero {
+  background-color: var(--color-background-muted);
+  padding: 76px 0;
+}
+.hero__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 70px;
+}
+.hero__content {
+  width: 535px;
+}
+.eyebrow {
+  margin: 0 0 14px;
+  color: var(--color-primary);
+  font-size: 15px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+.eyebrow--center {
+  text-align: center;
+}
+h1 {
+  margin: 0;
+  font-size: 56px;
+  line-height: 1.06;
+}
+.hero__text {
+  margin: 24px 0 30px;
+  font-size: 20px;
+  line-height: 1.6;
+  color: var(--color-text-secondary);
+}
+.hero__actions {
+  display: flex;
+  gap: 14px;
+}
+.hero__image {
+  width: 500px;
+  height: 390px;
+}
+.benefits {
+  padding: 82px 0;
+}
+.section-title {
+  margin: 0 auto 42px;
+  max-width: 700px;
+  text-align: center;
+  font-size: 38px;
+  line-height: 1.2;
+}
+.benefits__list {
+  display: flex;
+  gap: 24px;
+}
+.card {
+  width: 377px;
+  padding: 30px;
+  border: 1px solid var(--color-border);
+  border-radius: 16px;
+  background-color: var(--color-background);
+}
+.card img {
+  width: 58px;
+  height: 58px;
+  margin-bottom: 22px;
+}
+.card h3 {
+  margin: 0 0 12px;
+  font-size: 22px;
+}
+.card p {
+  margin: 0;
+  color: var(--color-text-secondary);
+  line-height: 1.55;
+}
+.program {
+  padding: 78px 0;
+  background-color: var(--color-background-muted);
+}
+.program__inner {
+  display: flex;
+  align-items: center;
+  gap: 72px;
+}
+.program__image-wrap {
+  width: 520px;
+  padding: 34px;
+  border-radius: 20px;
+  background-color: var(--color-background-light);
+}
+.program__image {
+  width: 452px;
+  height: 330px;
+}
+.program__content {
+  width: 520px;
+}
+.program__content h2 {
+  margin: 0 0 28px;
+  font-size: 40px;
+  line-height: 1.2;
+}
+.program__items {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.program__item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 17px 18px;
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  background-color: var(--color-background);
+}
+.program__item strong {
+  color: var(--color-primary);
+  font-size: 18px;
+}
+.signup {
+  padding: 80px 0;
+}
+.signup__box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+  padding: 42px 48px;
+  border-radius: 20px;
+  background-color: var(--color-primary);
+  color: #ffffff;
+}
+.signup__box .eyebrow {
+  color: var(--color-primary-light);
+}
+.signup__box h2 {
+  margin: 0 0 10px;
+  font-size: 34px;
+}
+.signup__box p {
+  margin: 0;
+  color: var(--color-primary-light);
+}
+.footer {
+  padding: 46px 0;
+  background-color: var(--color-background-dark);
+  color: var(--color-text-tertiary);
+}
+.footer__inner {
+  display: flex;
+  justify-content: space-between;
+  gap: 80px;
+}
+.logo--footer {
+  color: #ffffff;
+}
+.footer p {
+  width: 320px;
+  line-height: 1.5;
+}
+.footer__contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.footer__contacts strong {
+  color: #ffffff;
+  margin-bottom: 4px;
+}
+
+/* Урок 6: адаптивные стили намеренно отсутствуют. */
